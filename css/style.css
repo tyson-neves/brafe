@@ -46,3 +46,29 @@ body {
     font-size: 1.125em; /* calculo de em pegar o pixel base (normalmente 16px, e dividir pelo tamanho da fonte que você quer, neste caso 18px) 18/16 = 1.125 */
 
 }
+
+/* INTRO */
+.intro {
+    background: url('../img/bg-intro.jpg') no-repeat center center; /* center center alinha tanto top bottom quanto left right */
+    background-size: cover; /* background fica em 100% da largura deixando a imagem dinâmica e responsiva */
+    padding: 150px 0;
+    text-align: center;
+    color: #ffffff;
+}
+.intro h1 {
+    text-transform: uppercase;
+    font-size: 3em; /* 48(que é a quantidade de px que eu quero/16 */ 
+}
+
+.intro h1::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #ffffff;
+    margin: 10px auto;
+}
+.intro p { 
+    font-style: italic;
+    font-size: 1.125em;
+}
